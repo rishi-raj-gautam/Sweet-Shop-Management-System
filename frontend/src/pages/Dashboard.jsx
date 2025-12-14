@@ -5,6 +5,7 @@ import { colors } from '../constants/colors';
 import ProductCard from '../components/product/ProductCard';
 import ProductModal from '../components/product/ProductModal';
 import { api } from '../api/apiConfig';
+import logo from '../assets/logo.png';
 
 function Dashboard({ user, onLogout }) {
   const [sweets, setSweets] = useState([]);
@@ -126,10 +127,11 @@ function Dashboard({ user, onLogout }) {
                 {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
               </button>
               <div className="flex items-center space-x-3">
-                <div className="w-10 h-10 rounded-lg flex items-center justify-center"
-                  style={{ background: `linear-gradient(135deg, ${colors.primary}, ${colors.secondary})` }}>
-                  <Package className="text-white" size={20} />
-                </div>
+                <img 
+                  src={logo} 
+                  alt="Sweet Shop Logo" 
+                  className="w-12 h-12 rounded-lg"
+                />
                 <div>
                   <h1 className="text-xl font-bold text-gray-900 leading-tight">Sweet Shop</h1>
                   <p className="text-xs text-gray-500">Management System</p>

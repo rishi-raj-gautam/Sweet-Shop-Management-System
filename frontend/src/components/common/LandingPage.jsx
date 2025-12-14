@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { Package, User, Search, Shield, Zap, ArrowRight, CheckCircle2 } from 'lucide-react';
 import { motion as Motion } from 'framer-motion';
 import { colors } from '../../constants/colors';
+import logo from '../../assets/logo.png';
 
 function LandingPage() {
   const navigate = useNavigate();
@@ -79,10 +80,11 @@ function LandingPage() {
         <div className="w-full px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 rounded-lg flex items-center justify-center"
-                style={{ background: `linear-gradient(135deg, ${colors.primary}, ${colors.secondary})` }}>
-                <Package className="text-white" size={20} />
-              </div>
+              <img 
+                src={logo} 
+                alt="Sweet Shop Logo" 
+                className="w-10 h-10 rounded-lg"
+              />
               <div>
                 <h1 className="text-xl font-bold text-gray-900 leading-tight">Sweet Shop</h1>
                 <p className="text-xs text-gray-500">Management System</p>
@@ -113,8 +115,12 @@ function LandingPage() {
             <Motion.div
               variants={item}
               className="inline-flex items-center justify-center w-20 h-20 rounded-2xl mb-6 shadow-xl"
-              style={{ background: `linear-gradient(135deg, ${colors.primary}, ${colors.secondary})` }}>
-              <Package className="text-white" size={40} />
+            >
+              <img 
+                src={logo} 
+                alt="Sweet Shop Logo" 
+                className="w-full h-full object-contain rounded-2xl"
+              />
             </Motion.div>
             <Motion.h1 variants={item} className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
               Manage Your Sweet Shop
@@ -234,9 +240,12 @@ function LandingPage() {
             </div>
             <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-8 shadow-xl">
               <div className="text-center">
-                <div className="inline-flex items-center justify-center w-24 h-24 rounded-2xl mb-6"
-                  style={{ background: `linear-gradient(135deg, ${colors.primary}, ${colors.secondary})` }}>
-                  <Package className="text-white" size={48} />
+                <div className="inline-flex items-center justify-center w-24 h-24 rounded-2xl mb-6">
+                  <img 
+                    src={logo} 
+                    alt="Sweet Shop Logo" 
+                    className="w-full h-full object-contain rounded-2xl"
+                  />
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Ready to Get Started?</h3>
                 <p className="text-gray-600 mb-6">
@@ -262,10 +271,11 @@ function LandingPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <div className="flex items-center justify-center space-x-3 mb-4">
-              <div className="w-10 h-10 rounded-lg flex items-center justify-center"
-                style={{ background: `linear-gradient(135deg, ${colors.primary}, ${colors.secondary})` }}>
-                <Package className="text-white" size={20} />
-              </div>
+              <img 
+                src={logo} 
+                alt="Sweet Shop Logo" 
+                className="w-10 h-10 rounded-lg"
+              />
               <h3 className="text-xl font-bold">Sweet Shop Management</h3>
             </div>
             <p className="text-white/85 mb-4">
