@@ -115,3 +115,7 @@ project-root/
 
 **Rishi Raj Gautam**  
 Full Stack Developer
+
+- GitHub: [@rishi-raj-gautam](https://github.com/rishi-raj-gautam/)
+- LinkedIn: [Rishi Raj Gautam](https://www.linkedin.com/in/rishi-raj-gautam-232221276/)
+- Email: rishirajgautam.030303@gmail.com
