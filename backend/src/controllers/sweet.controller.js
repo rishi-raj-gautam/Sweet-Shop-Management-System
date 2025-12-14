@@ -101,6 +101,13 @@ exports.restockSweet = async (req, res) => {
     return res.status(404).json({ message: "Sweet not found" });
   }
 
+  if (amount <= 0) {
+  const err = new Error("Restock amount must be positive");
+  err.statusCode = 400;
+  throw err;
+}
+
+
   sweet.quantity += amount;
   await sweet.save();
 
