@@ -36,7 +36,7 @@ function ProductCard({ sweet, onPurchase, onDelete, onRestock, onEdit, isAdmin }
         <div className="absolute top-3 right-3">
           {sweet.quantity === 0 ? (
             <span 
-              style={{ backgroundColor: colors.accent, color: 'white' }}
+              style={{ backgroundColor: colors.accent, color: colors.primary }}
               className="px-3 py-1 rounded-full text-xs font-semibold shadow-md"
             >
               Out of Stock
@@ -122,7 +122,7 @@ function ProductCard({ sweet, onPurchase, onDelete, onRestock, onEdit, isAdmin }
             whileTap={sweet.quantity === 0 ? undefined : { scale: 0.98 }}
           >
             <ShoppingCart size={18} />
-            <span>Add to Cart</span>
+            <span>Purchase Sweet</span>
           </Motion.button>
 
           {isAdmin && (
@@ -155,7 +155,7 @@ function ProductCard({ sweet, onPurchase, onDelete, onRestock, onEdit, isAdmin }
                   }
                 }}
                 className="px-3 py-2.5 border-2 rounded-lg font-medium transition-all hover:bg-red-50 flex items-center justify-center"
-                style={{ borderColor: colors.accent, color: colors.accent }}
+                style={{ borderColor: colors.accent, color: colors.primary }}
                 whileTap={{ scale: 0.98 }}
               >
                 <Trash2 size={16} />

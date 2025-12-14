@@ -272,7 +272,7 @@ function LandingPage() {
               Professional inventory management for modern sweet shops
             </p>
             <p className="text-white/70 text-sm">
-              &copy; 2024 Sweet Shop Management System. All rights reserved.
+              &copy; {new Date().getFullYear()} Sweet Shop Management System. All rights reserved.
             </p>
           </div>
         </div>
